@@ -1,0 +1,78 @@
+.filters {
+  width: 230px;
+  padding-bottom: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 8px 0px #0000001a;
+  height: fit-content;
+
+  @media screen and (width < 767px) {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 10px;
+  }
+
+  p {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin: 20px 20px 10px 20px;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    position: relative;
+    padding: 8px 20px;
+
+    &:hover {
+      background-color: #f1fcff;
+    }
+  }
+}
+
+.checkbox {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+
+  &__input {
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    margin-right: 10px;
+
+    &:focus-visible + span {
+      border: 1px solid #000;
+    }
+  }
+
+  &__title {
+    font-size: 13px;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  &__input + &__title::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #2196f3;
+    border-radius: 2px;
+  }
+
+  &__input:checked + &__title::after {
+    content: url(../../img/Shape.svg);
+    position: absolute;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+  }
+}

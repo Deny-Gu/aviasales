@@ -1,0 +1,64 @@
+.ticket-item {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1019607843);
+  margin-bottom: 20px;
+  padding: 20px 20px 10px 20px;
+
+  @media screen and (width < 767px) {
+    min-width: 300px;
+    padding: 10px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 15px;
+  }
+
+  &__price span {
+    color: #2196f3;
+    font-size: 24px;
+    font-weight: 600;
+    width: 30%;
+  }
+
+  &__airline {
+    width: 30%;
+
+    & span {
+      height: 40px;
+      display: block;
+    }
+  }
+
+  &__table {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  &__table th,
+  &__table td {
+    width: 35%;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+
+    @media screen and (width < 767px) {
+      width: 30%;
+    }
+  }
+
+  &__table th {
+    font-size: 12px;
+    color: #a0b0b9;
+  }
+
+  &__table td {
+    font-size: 14px;
+    color: #4a4a4a;
+    text-transform: none;
+  }
+}

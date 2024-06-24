@@ -1,0 +1,31 @@
+@import '~@openfonts/open-sans_cyrillic/index.css';
+
+$text-color: #4a4a4a;
+$button-color: #2196f3;
+
+* {
+  font-size: 14px;
+  font-family: 'Open Sans';
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f3f7fa;
+}
+
+button {
+  background-color: $button-color;
+}
+
+.wrapper-app {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0 20px;
+  max-width: 750px;
+  min-width: 320px;
+  margin: 0 auto;
+}
